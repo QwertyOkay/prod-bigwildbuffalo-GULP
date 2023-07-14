@@ -1,0 +1,85 @@
+/* ---------- Cookie ----------- */
+.cookiebar {
+  z-index: 11;
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  bottom: 0;
+  padding: 12px 0px 0px 0px;
+
+  background: var(--color-modalsBG);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 1px;
+  text-align: center;
+  transform: translateX(-50%);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+@media screen and (min-width: 1200px) {
+  .cookiebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 12px;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cookiebar p {
+    margin-bottom: 12px;
+  }
+}
+.cookiebar p {
+  // color: var(--color-modalP);
+  padding: 0px 12px 0px;
+  color: var(--color-modalP);
+}
+
+.cookiebar__link {
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  color: var(--color-modalP);
+  cursor: pointer;
+}
+
+.button__list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 0px 12px 12px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px;
+  }
+}
+
+.btn__cookies {
+  padding: 6px 16px;
+  color: #fff;
+  background-color: var(--color-accent);
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: background-color 0.3s, color 0.3s;
+    // border: 0.2px solid #00000070;
+    padding: 6px 16px;
+  }
+}
+
+.btn--darker:hover,
+.btn--darker:focus {
+  background-color: #724b02;
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: background-color 0.3s, color 0.3s;
+}

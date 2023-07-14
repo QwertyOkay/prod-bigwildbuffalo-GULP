@@ -1,0 +1,31 @@
+.overlay__text {
+  display: none;
+    position: absolute;
+    // width: 100%;
+    // height: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $main-title-color;
+    padding: 20px 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.56em;
+    letter-spacing: 0.03em;
+    transform: translatey(101%);
+    transition-property: transform;
+    transition-duration: $duration;
+    transition-timing-function: $function;
+  }
+  
+  .link__hero:hover .overlay__text {
+    // transform: translatey(0);
+    display: block;
+  }
+
+  .herobox__aside {
+    position: relative;
+    overflow: hidden;
+}
+
