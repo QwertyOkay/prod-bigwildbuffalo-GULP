@@ -1,6 +1,6 @@
 /* ---------- Cookie ----------- */
 .cookiebar {
-  z-index: 11;
+  z-index: 1111;
   position: fixed;
   width: 100%;
   left: 50%;
@@ -63,6 +63,7 @@
   padding: 6px 16px;
   color: #fff;
   background-color: var(--color-accent);
+  border-radius: 6px;
 
   &:hover {
     background-color: var(--color-primary-hover);

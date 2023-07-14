@@ -44,8 +44,9 @@ $footerAccentColor: #b5aeb0;
 
 .footer {
   padding: 20px;
-  background-color: var(--color-bg);
+  // background-color: var(--color-bg);
   border-top: 1px solid rgb(255 255 255 / 18%);
+  background: url("../img/textured.jpeg");
 }
 
 .footer__ul {

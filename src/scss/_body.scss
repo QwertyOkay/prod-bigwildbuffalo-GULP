@@ -115,7 +115,7 @@ body {
   // padding: 20px 0 0;
   display: block;
   position: relative;
-  background: #ffe4c414;
+  // background: #ffe4c414;
   border-radius: 6px;
 
   @media screen and (min-width: 1200px) {
@@ -272,13 +272,9 @@ button {
 }
 
 .hero__section {
-  // background-image: linear-gradient(
-  //   to right,
-  //   rgb(47 48 58 / 11%),
-  //   rgb(47 48 58 / 2%)
-  // );
-  background-image: url("../../img/hero.jfif");
+  background-image: url("../../img/hero.png");
   background-size: cover;
+  background-position: center;
   height: 73vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -288,6 +284,7 @@ button {
   @media screen and (min-width: 1200px) {
     height: 100vh;
     width: 100%;
+    background-position: unset;
   }
 }
 
@@ -698,13 +695,13 @@ button {
   position: relative;
   background: transparent;
   color: #000;
-  font-size: 27px;
-  font-weight: 900;
-  line-height: 1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -739,7 +736,7 @@ button {
   bottom: -8px;
   left: -8px;
   border: 3px solid #000;
-  box-shadow: 0px 0px 8px #abe2fb;
+  box-shadow: 0px 0px 5px #ac847a;
   border-radius: 6px;
 }
 
@@ -767,7 +764,7 @@ button {
   background: transparent;
   color: #fff;
   /* font-family: prata,serif; */
-  font-size: 46px;
+  font-size: 36px;
   font-weight: 900;
   line-height: 1;
   padding: 30px 0px;
@@ -842,11 +839,11 @@ button {
   height: 100%;
   background: linear-gradient(
     115deg,
-    #4fcf70,
+    #f9a619,
     #fad648,
-    #a767e5,
-    #12bcfe,
-    #44ce7b
+    #561b0d,
+    #fddaa1,
+    #000000
   );
   background-size: 50% 100%;
   border-radius: inherit;
@@ -861,7 +858,7 @@ button {
   z-index: 2;
   display: block;
   background-color: #fff;
-  color: #dd064a;
+  color: #70340f;
   padding: 15px 20px;
   border-radius: 3px;
   font-weight: 900;
@@ -897,5 +894,5 @@ button {
 .btnsec__wrap {
   width: 100%;
   height: auto;
-  padding: 50px 0px;
+  // padding: 50px 0px;
 }

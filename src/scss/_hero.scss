@@ -59,3 +59,24 @@
     margin-right: auto;
   }
 }
+
+.hero__all-items {
+  position: absolute;
+  color: #000;
+  z-index: 1;
+  top: 72%;
+  left: 35%;
+  background: #fff;
+  padding: 20px 30px;
+  /* width: 100%; */
+  /* align-self: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+.marginHero {
+  margin: 0px 0px 40px;
+}
