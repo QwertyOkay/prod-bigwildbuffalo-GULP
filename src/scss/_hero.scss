@@ -65,7 +65,7 @@
   color: #000;
   z-index: 1;
   top: 72%;
-  left: 35%;
+  left: 27%;
   background: #fff;
   padding: 20px 30px;
   /* width: 100%; */
@@ -75,6 +75,32 @@
   align-items: center;
   text-transform: capitalize;
   border-radius: 6px;
+
+  background-color: #8f1015;
+  border-color: transparent;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 0;
+  color: #f2f2f0;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 14px;
+  min-height: 44px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  padding: 0.9em 3em;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: 1200px) {
+    left: 43%;
+  }
+}
+
+.hero__all-items:hover {
+  background-color: #a51317;
 }
 
 .marginHero {
