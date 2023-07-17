@@ -14,8 +14,8 @@ $border-color: #eeeeee;
 $first-text-color: #757575;
 $second-title-color: #212121;
 $current-placeholder-color: rgba(117, 117, 117, 0.5);
-$accent-color: #9927b5;
-$btn-accent-color: #9927b5;
+$accent-color: #4c3830;
+$btn-accent-color: #4c3830;
 
 $second-text-color: rgba(255, 255, 255, 0.6);
 $social-background-color: rgba(255, 255, 255, 0.1);
@@ -178,20 +178,21 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
   color: #212121;
 }
 
-.modal__input5 {
-  display: block;
-  width: 90%;
-  height: 40px;
-  border: 1px solid rgb(60 48 39);
-  padding-left: 42px;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// .modal__input5 {
+//   display: block;
+//   width: 300px;
+//   height: 30px;
+//   border: 1px solid rgb(60 48 39);
+//   padding-left: 42px;
+//   transition-property: border;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   // background-color: #f6f6f4;
 
-  &:focus {
-    border-color: $accent-color;
-  }
-}
+//   &:focus {
+//     border-color: $accent-color;
+//   }
+// }
 
 .modal__input5::placeholder {
   color: rgb(45, 45, 45);
@@ -448,9 +449,9 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
 
 .modal__input5 {
   display: block;
-  background-color: #f6f6f4;
-  width: 90%;
-  height: 40px;
+  // background-color: #f6f6f4;
+  height: 30px;
+  width: 300px;
   border: 1.5px solid rgb(60 48 39);
   padding-left: 42px;
   transition-property: border;
@@ -460,6 +461,10 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
   // &:focus {
   //     border-color: $accent-color;
   // }
+
+  @media screen and (min-width: 1200px) {
+    width: 430px;
+  }
 }
 
 .modal__input5::placeholder {
@@ -484,7 +489,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
 
 .modal__area {
   display: block;
-  background-color: #f6f6f4;
+  background-color: #fff;
   width: 100%;
   height: 120px;
   resize: none;

@@ -701,17 +701,17 @@ footer a {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  border: #001436;
-  background-color: #001436;
+  border: #561b0d;
+  background-color: #561b0d;
   padding: 10px 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   font-size: 1em;
   width: 150px;
   height: 35px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .modal__input5:focus + .icon__modal-img {
-  fill: rgb(255 40 113);
+  fill: #561b0d;
 }
