@@ -701,8 +701,8 @@ footer a {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  border: #561b0d;
-  background-color: #561b0d;
+  border: #8f1015;
+  background-color: #8f1015;
   padding: 10px 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -710,6 +710,10 @@ footer a {
   width: 150px;
   height: 35px;
   border-radius: 6px;
+}
+
+.contactNewBtn:hover {
+  background: #a51317;
 }
 
 .modal__input5:focus + .icon__modal-img {
