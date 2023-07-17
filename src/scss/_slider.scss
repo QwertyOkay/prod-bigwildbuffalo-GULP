@@ -323,11 +323,11 @@
 .wrapper__span2 {
   position: absolute;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 0.9em;
   z-index: 100;
   padding: 10px;
-  background: #c2b99c;
-  color: #000;
+  background: #000;
+  color: #fff;
   left: 0;
   font-weight: 700;
   border-radius: 6px;
@@ -338,4 +338,20 @@
 .itcss__item__a {
   display: block;
   z-index: 222222;
+}
+
+.wrapper__span3 {
+  position: absolute;
+  color: #fff;
+  font-size: 0.9em;
+  z-index: 100;
+  padding: 10px;
+  background: #c2b99c;
+  color: #000;
+  left: 0;
+  font-weight: 700;
+  border-radius: 6px;
+  left: 2%;
+  top: 12%;
+  text-transform: uppercase;
 }
