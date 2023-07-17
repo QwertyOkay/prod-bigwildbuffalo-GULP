@@ -161,23 +161,18 @@
   padding: 44px 24px;
   border-radius: var(--border-radius);
   color: var(--color-black);
-  background-image: linear-gradient(
-      180deg,
-      rgb(91 47 47 / 81%) -7.29%,
-      rgb(140 128 48 / 31%) 130.21%
-    ),
-    url(./../img/bcg.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #3a2632;
+  background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
     width: 55vw;
-    max-width: 800px;
+    max-width: 600px;
   }
 }
 

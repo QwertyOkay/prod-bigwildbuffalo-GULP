@@ -1,65 +1,65 @@
-$buttons-color: #ff0454;
+$buttons-color: var(--color-accent);
 
 .button__hero {
   border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #78be20;
+  box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+  font-size: 26.285px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
+  // transition-duration: var(--duration);
+  // transition-timing-function: var(--function);
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+  // transform: perspective(1px) translateZ(0);
+
+  width: 210px;
+  height: 60px;
+
+  border-color: rgb(109, 140, 24);
+  border-radius: 20px;
+  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
+    0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
+    0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+  // -webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+  //   -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+  //   box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+
+  @media screen and (min-width: 768px) {
+    border: none;
     cursor: pointer;
     border-radius: 20px;
     background-color: #78be20;
-    box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
     font-size: 26.285px;
+
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
     text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
-    // transition-duration: var(--duration);
-    // transition-timing-function: var(--function);
-    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-        // transform: perspective(1px) translateZ(0);
-  
-    width: 210px;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--function);
+
+    width: 220px;
     height: 60px;
-  
+
     border-color: rgb(109, 140, 24);
     border-radius: 20px;
     box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
-        0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
-        0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
-        0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
-    // -webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-    //   -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-    //   box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-
-  @media screen and (min-width: 768px) {
-      border: none;
-      cursor: pointer;
-      border-radius: 20px;
-      background-color: #78be20;
-      box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
-      font-size: 26.285px;
-    
-      color: rgb(255, 255, 255);
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
-      transition-duration: var(--duration);
-      transition-timing-function: var(--function);
-  
-      width: 220px;
-      height: 60px;
-  
-      border-color: rgb(109, 140, 24);
-      border-radius: 20px;
-      box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
-          0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
-          0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
-          0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
-     
-    }
+      0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
+      0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
+      0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+  }
 
   @media screen and (min-width: 1200px) {
-  border: none;
+    border: none;
     cursor: pointer;
     border-radius: 20px;
     background-color: #78be20;
@@ -73,8 +73,9 @@ $buttons-color: #ff0454;
     text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
     // transition-duration: var(--duration);
     // transition-timing-function: var(--function);
-    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-  
+    transition: color 0.3s ease, background-color 0.3s ease,
+      border-color 0.3s ease;
+
     width: 240px;
     height: 60px;
     margin-bottom: 18px;
@@ -86,29 +87,29 @@ $buttons-color: #ff0454;
     // -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
     // box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
     box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
-        0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
-        0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
-        0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+      0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
+      0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
+      0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
   }
 
   @media screen and (min-width: 1900px) {
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-  background-color: #78be20;
-  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
-  font-size: 26.285px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #78be20;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+    font-size: 26.285px;
 
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
-  // transition-duration: var(--duration);
-  // transition-timing-function: var(--function);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
+    // transition-duration: var(--duration);
+    // transition-timing-function: var(--function);
 
-  width: 266px;
-  height: 60px;
+    width: 266px;
+    height: 60px;
 
     border-color: rgb(109, 140, 24);
     border-radius: 20px;
@@ -116,27 +117,26 @@ $buttons-color: #ff0454;
     // -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
     // box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
     box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
-        0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
-        0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
-        0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+      0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
+      0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
+      0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
   }
 
-   &:hover {
+  &:hover {
     // transform: translateY(-13px) translateY(-9px) ;
     //     transition: color .3s ease, background-color .3s ease, border-color .3s ease;
     //     transition-duration: var(--duration);
     //     transition-timing-function: var(--function);
     transform: perspective(1px) translateZ(0);
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  // color: $main-title-color;
-  // background-color: $accent-color;
+    // color: $main-title-color;
+    // background-color: $accent-color;
   }
 }
 
 .button__hero:focus {
   color: $main-title-color;
 }
-
 
 .hvr-grow {
   display: inline-block;
@@ -155,7 +155,6 @@ $buttons-color: #ff0454;
   transform: scale(1.1);
 }
 
-
 .button__modal {
   display: flex;
   justify-content: center;
@@ -169,7 +168,7 @@ $buttons-color: #ff0454;
   background-color: #fff;
   color: #000;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
@@ -189,15 +188,15 @@ $buttons-color: #ff0454;
   background-color: #20847c;
   color: #000;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus, 
-    &:hover {
-       color: brown;
+  &:focus,
+  &:hover {
+    color: brown;
   }
 }
 
@@ -216,22 +215,22 @@ $buttons-color: #ff0454;
   padding: 0;
   cursor: pointer;
   transition-property: color;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus, 
-    &:hover {
-       color: brown;
+  &:focus,
+  &:hover {
+    color: brown;
   }
 }
 
 .button__modal1 {
   justify-content: center;
   display: flex;
-  left: 11px;
+  left: -11px;
   align-items: center;
-  top: 11px;
+  top: -11px;
   position: absolute;
   min-width: 30px;
   padding: 0;
@@ -239,15 +238,15 @@ $buttons-color: #ff0454;
   border-radius: 50%;
   color: #000;
   min-height: 30px;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition-duration: 250ms;
   cursor: pointer;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus, 
-    &:hover {
-       color: brown;
+  &:focus,
+  &:hover {
+    color: brown;
   }
 }
 
@@ -265,14 +264,14 @@ $buttons-color: #ff0454;
   padding: 0;
   border-radius: 50%;
   transition-property: color;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   transition-duration: 250ms;
 
-  &:focus, 
-    &:hover {
-       color: brown;
+  &:focus,
+  &:hover {
+    color: brown;
   }
 }
 
@@ -289,14 +288,14 @@ $buttons-color: #ff0454;
   border-radius: 50%;
   min-width: 30px;
   transition-property: color;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: #000;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
-  &:focus, 
-    &:hover {
-       color: brown;
+  &:focus,
+  &:hover {
+    color: brown;
   }
 }

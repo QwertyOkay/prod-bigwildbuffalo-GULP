@@ -610,9 +610,12 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
   // margin: 10px 0 10px;
   color: #000;
   // z-index: 99;
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
   // left: 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .modal__hero-text4 {
