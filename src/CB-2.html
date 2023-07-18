@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bigwildbuffalo.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo.svg" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <header class="header">
+                <div class="header__content">
+                    <div>
+                        <a href="/" class="header__flex">
+                            <h1 class="header__flex">
+                                <img class="header__logo-img" src="../img/logo.svg" alt="Logo">
+                            </h1>
+                        </a>
+                    </div>
+
+                </div>
+            </header>
+        </nav>
+
+        <section class="prod__sec">
+            <div class="prod__title2">
+                <h1 class="prod__h1T">Thank you for interest! <br>Please leave your email and will text you
+                    is as soon as possible.</h1>
+                <div class="prod__wrap">
+                    <div>
+                        <img src="../img/CB/2.webp" alt="ImageItem" class="prod__img">
+                    </div>
+
+                    <div class="items__info">
+
+                        <h2 class="prod__name">Cavender's Endurance Camel</h2>
+
+                        <p class="prod__price">€ 249.00</p>
+
+                        <form class="items__form" autocomplete="on" data-register>
+                            <input class="items__input" type="email" placeholder="Email" autocomplete="email"
+                                pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                required>
+                            <button class="items__button" type="submit">Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal__backdrop is-hidden" data-backdrop>
+            <div class="modal product__modal" id="gameFrame">
+                <button type="button" class="button__modal1" data-modal-close>
+                    <svg class="icon__close3">
+                        <use href="../img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <span class="modal__hero-text">Thank you for order! <br> We will contact you soon.
+                </span>
+            </div>
+        </div>
+
+        <script>
+            (() => {
+                const form = document.querySelector("[data-register]");
+                const registrationModalBackdrop = document.querySelector("[data-backdrop]");
+
+                // Show formData and close modal by submit
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault();
+
+                    toggleRegistrationModal();
+
+                    form.reset();
+
+                });
+
+                function toggleRegistrationModal() {
+                    registrationModalBackdrop.classList.toggle("is-hidden");
+                }
+
+                // Hide modal by click on backdrop
+                registrationModalBackdrop.addEventListener("click", hideModalWindowOnBlur);
+
+                function hideModalWindowOnBlur(e) {
+                    if (e.target === e.currentTarget) {
+                        toggleRegistrationModal();
+                    }
+                }
+            })();
+        </script>
+
+        <script>
+            (() => {
+                const refs = {
+
+                    closeModalBtn: document.querySelector('[data-modal-close]'),
+                    modal: document.querySelector('[data-backdrop]'),
+
+                };
+
+                // refs.openModalBtn.addEventListener('click', toggleModal);
+                refs.closeModalBtn.addEventListener('click', toggleModal);
+
+
+                function toggleModal() {
+                    refs.modal.classList.toggle('is-hidden');
+                }
+
+
+            })();
+        </script>
+
+        @@include('./html/footer.html')
+        <script src="js/app.min.js"></script>
+    </main>
+
+</body>
+
+</html>
