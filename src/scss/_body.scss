@@ -272,7 +272,7 @@ button {
 }
 
 .hero__section {
-  background-image: url("../../img/hero.png");
+  background-image: url("./../img/hero.png");
   background-size: cover;
   background-position: center;
   height: 73vh;
@@ -361,10 +361,10 @@ button {
 }
 
 .header__logo-img {
-  width: 100px;
+  width: 185px;
   @media screen and (min-width: 1200px) {
-    height: 85px;
-    width: 175px;
+    height: 65px;
+    width: 200px;
   }
 }
 
@@ -784,7 +784,7 @@ button {
     margin: 0px;
     width: 400px;
     top: 45%;
-    left: 35%;
+    left: 36%;
     display: flex;
     justify-content: center;
     align-items: center;
